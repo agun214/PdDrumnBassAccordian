@@ -1,0 +1,16 @@
+#N canvas 0 241 1600 839 10;
+#X obj 100 117 f;
+#X obj 143 117 + 1;
+#X obj 100 140 mod 2;
+#X obj 100 75 change;
+#X obj 100 96 sel 1;
+#X obj 101 55 inlet;
+#X obj 100 159 outlet;
+#X text 167 87 toggle a toggle with a toggle;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 3 0;

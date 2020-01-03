@@ -1,0 +1,22 @@
+#N canvas 0 241 1600 839 10;
+#X obj 45 77 select 0 1;
+#X obj 45 99 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 81 99 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 81 116 0;
+#X msg 45 116 1;
+#X floatatom 81 136 5 0 0 0 - - -, f 5;
+#X floatatom 45 136 5 0 0 0 - - -, f 5;
+#X obj 45 50 inlet;
+#X obj 62 189 outlet;
+#X text 138 90 create inverted toggle switch;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 8 0;
+#X connect 6 0 8 0;
+#X connect 7 0 0 0;
